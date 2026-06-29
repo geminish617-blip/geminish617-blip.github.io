@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GeminiSH – Privacy Policy</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --brand: #1a73e8;
+      --surface: #f8f9fa;
+      --text: #212529;
+      --muted: #6c757d;
+      --border: #dee2e6;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: #fff;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+      color: #fff;
+      padding: 72px 0 56px;
+    }
+
+    .hero .badge-pill {
+      background: rgba(255,255,255,0.18);
+      color: #fff;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      padding: 4px 14px;
+      display: inline-block;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.9rem, 5vw, 2.8rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      opacity: 0.88;
+      max-width: 500px;
+      margin: 0;
+    }
+
+    /* ── COMPANY INFO ── */
+    .info-section {
+      padding: 52px 0;
+      background: #fff;
+    }
+
+    .info-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .info-icon {
+      width: 40px;
+      height: 40px;
+      background: #e8f0fe;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .info-item h6 {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 3px;
+    }
+
+    .info-item p {
+      font-size: 0.93rem;
+      margin: 0;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .info-item a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    /* ── PRIVACY ── */
+    .privacy-section {
+      padding: 64px 0 80px;
+      background: var(--surface);
+    }
+
+    .privacy-header {
+      margin-bottom: 36px;
+    }
+
+    .privacy-header .label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--brand);
+      margin-bottom: 8px;
+    }
+
+    .privacy-header h2 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 6px;
+    }
+
+    .privacy-header .effective {
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    /* Summary cards */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+
+    .summary-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .summary-card .icon {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .summary-card h6 {
+      font-size: 0.83rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .summary-card p {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    /* Policy body */
+    .policy-body {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 40px;
+    }
+
+    .policy-body h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-top: 36px;
+      margin-bottom: 10px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+    }
+
+    .policy-body h3:first-of-type {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+
+    .policy-body p,
+    .policy-body li {
+      font-size: 0.9rem;
+      color: #444;
+      line-height: 1.8;
+    }
+
+    .policy-body ul {
+      padding-left: 20px;
+    }
+
+    .policy-body a {
+      color: var(--brand);
+    }
+
+    .policy-body .highlight-box {
+      background: #e8f0fe;
+      border-left: 4px solid var(--brand);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 0.88rem;
+      color: #1a1a2e;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #1a1a2e;
+      color: rgba(255,255,255,0.5);
+      padding: 32px 0;
+      font-size: 0.82rem;
+      text-align: center;
+    }
+
+    footer strong { color: #fff; }
+    footer a { color: rgba(255,255,255,0.5); }
+
+    hr.section-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="badge-pill">Independent Mobile Developer</div>
+      <h1>GeminiSH</h1>
+      <p>Simple, private utility apps — all data stays on your device. No accounts. No servers. No ads.</p>
+    </div>
+  </section>
+
+  <!-- COMPANY INFO -->
+  <section class="info-section">
+    <div class="container">
+      <div class="info-grid">
+        <div class="info-item">
+          <div class="info-icon">🏢</div>
+          <div>
+            <h6>Developer</h6>
+            <p>GeminiSH</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div>
+            <h6>Address</h6>
+            <p>525 Gonghang-daero, Gangseo-gu<br />Seoul, Republic of Korea</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">✉️</div>
+          <div>
+            <h6>Contact</h6>
+            <p><a href="mailto:geminish617@gmail.com">geminish617@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- PRIVACY POLICY -->
+  <section class="privacy-section" id="privacy">
+    <div class="container">
+
+      <div class="privacy-header">
+        <div class="label">Legal</div>
+        <h2>Privacy Policy</h2>
+        <p class="effective">Effective Date: June 29, 2026 &nbsp;·&nbsp; Applies to all apps published by GeminiSH on Google Play</p>
+      </div>
+
+      <!-- Quick summary cards -->
+      <div class="summary-grid">
+        <div class="summary-card">
+          <div class="icon">🚫</div>
+          <h6>No Account Required</h6>
+          <p>We never ask you to sign up or log in.</p>
+        </div>
+        <div class="summary-card">
+          <div class="icon">📵</div>
+          <h6>No Server Storage</h6>
+          <p>Your data never leaves your device.</p>
+        </div>
+        <div class="summary-card">
+          <div class="icon">📊</div>
+          <h6>No Analytics</h6>
+          <p>We collect zero usage or behavioral data.</p>
+        </div>
+        <div class="summary-card">
+          <div class="icon">🚫📢</div>
+          <h6>No Ads</h6>
+          <p>No advertising SDKs of any kind.</p>
+        </div>
+        <div class="summary-card">
+          <div class="icon">🔒</div>
+          <h6>Local Only</h6>
+          <p>All content is stored on-device only.</p>
+        </div>
+      </div>
+
+      <!-- Full policy text -->
+      <div class="policy-body">
+
+        <h3>1. Introduction</h3>
+        <p>GeminiSH ("we", "us", or "our") develops and publishes utility applications for Android on the Google Play Store. This Privacy Policy describes our information practices and explains what data our apps handle, where it is stored, and how it is protected.</p>
+        <div class="highlight-box">
+          Our apps are built on a privacy-first principle: <strong>all user data is stored locally on your device only.</strong> We do not operate any servers that receive, store, or process your personal information.
+        </div>
+
+        <h3>2. No Personal Data Collected</h3>
+        <p>We do not collect any personally identifiable information (PII). This includes, but is not limited to:</p>
+        <ul>
+          <li>Name, email address, phone number, or any contact information</li>
+          <li>Account credentials or login information (no accounts exist)</li>
+          <li>Location or GPS data</li>
+          <li>Device identifiers, advertising IDs (GAID), or hardware serial numbers</li>
+          <li>IP addresses or network information</li>
+          <li>Contacts, calendar entries, or media files</li>
+        </ul>
+
+        <h3>3. User-Generated Content</h3>
+        <p>Any content you create within our apps — including notes, memos, to-do items, spreadsheet data, or any other input — is stored exclusively in your device's local storage (internal storage or external SD card, depending on the app and your settings). This data:</p>
+        <ul>
+          <li>Is never transmitted to any external server</li>
+          <li>Is never shared with third parties</li>
+          <li>Is never backed up to any cloud service operated by GeminiSH</li>
+          <li>Remains entirely under your control at all times</li>
+        </ul>
+        <p>If you choose to use your device's built-in backup features (e.g., Google One Backup), that process is governed solely by Google's privacy policy and is outside our control.</p>
+
+        <h3>4. Encryption</h3>
+        <p>Apps that offer optional data encryption use industry-standard cryptographic algorithms (AES-256-GCM with PBKDF2-HMAC-SHA256 key derivation). Passwords used for encryption are never stored or transmitted — only a salted, derived key is used locally. <strong>We have no ability to access or recover encrypted content.</strong></p>
+
+        <h3>5. Storage Permissions</h3>
+        <p>Certain apps may request access to device storage. The sole purpose of any storage permission is to read and write app data files (such as encrypted notes) to a designated folder on your device. This permission is never used to scan, read, or access files unrelated to the app's function.</p>
+        <ul>
+          <li><strong>READ_EXTERNAL_STORAGE / WRITE_EXTERNAL_STORAGE / MANAGE_EXTERNAL_STORAGE:</strong> Used only to save and restore app data files to your device's external storage, enabling data recovery after app reinstallation. No other files are accessed.</li>
+        </ul>
+
+        <h3>6. In-App Purchases</h3>
+        <p>Some apps offer optional one-time in-app purchases to unlock premium features. All payment transactions are processed entirely by <strong>Google Play Billing</strong>. GeminiSH does not receive, process, or store any payment card details or billing information. Purchase entitlement status (free vs. premium) is managed by Google Play and cached locally on your device. For payment-related inquiries, please refer to <a href="https://support.google.com/googleplay/answer/2479637" target="_blank">Google Play's support page</a>.</p>
+
+        <h3>7. Third-Party SDKs and Services</h3>
+        <p>Our apps do not integrate any of the following:</p>
+        <ul>
+          <li>Analytics SDKs (e.g., Firebase Analytics, Mixpanel, Amplitude)</li>
+          <li>Advertising networks (e.g., AdMob, Meta Audience Network)</li>
+          <li>Crash reporting services that transmit data externally</li>
+          <li>Social login or single sign-on providers</li>
+          <li>Any other third-party SDK that collects or transmits user data</li>
+        </ul>
+        <p>The only external service our apps interact with is <strong>Google Play</strong> for in-app purchase validation, which is governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+
+        <h3>8. Data Retention and Deletion</h3>
+        <p>Because we do not collect or store any data on our servers, there is no data on our end to retain or delete. All app data resides on your device. You can delete all app data at any time by:</p>
+        <ul>
+          <li>Using the app's built-in delete functionality</li>
+          <li>Going to <em>Settings → Apps → [App Name] → Storage → Clear Data</em> on your Android device</li>
+          <li>Uninstalling the app (note: data stored in external storage folders may persist after uninstallation)</li>
+        </ul>
+
+        <h3>9. Children's Privacy</h3>
+        <p>Our apps are general-purpose utility tools and are not directed at children under the age of 13 (or the applicable age of digital consent in your jurisdiction). We do not knowingly collect any personal information from children. If you believe a child has provided personal information in connection with our apps, please contact us and we will take appropriate action.</p>
+
+        <h3>10. Security</h3>
+        <p>We take reasonable technical measures to protect locally stored data. Apps that handle sensitive information use encryption as described in Section 4. However, the security of your device is also a factor — we recommend using a device screen lock and keeping your operating system up to date.</p>
+
+        <h3>11. Changes to This Privacy Policy</h3>
+        <p>We may update this Privacy Policy periodically to reflect changes in our apps or applicable law. When we make material changes, we will update the effective date at the top of this page. We encourage you to review this policy whenever you use our apps. Continued use of our apps following the posting of changes constitutes your acceptance of the updated policy.</p>
+
+        <h3>12. Your Rights</h3>
+        <p>Depending on your jurisdiction, you may have rights regarding your personal data, including the right to access, correct, or delete it. Since we do not collect or store personal data on our servers, most of these rights are exercised directly on your own device. For any privacy-related questions or requests, please contact us at the address below.</p>
+
+        <h3>13. Contact Us</h3>
+        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please reach out:</p>
+        <ul>
+          <li><strong>Developer:</strong> GeminiSH</li>
+          <li><strong>Email:</strong> <a href="mailto:geminish617@gmail.com">geminish617@gmail.com</a></li>
+          <li><strong>Address:</strong> 525 Gonghang-daero, Gangseo-gu, Seoul, Republic of Korea</li>
+        </ul>
+        <p>We will respond to all inquiries within a reasonable time frame.</p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p class="mb-1"><strong>GeminiSH</strong></p>
+      <p class="mb-1">525 Gonghang-daero, Gangseo-gu, Seoul, Republic of Korea</p>
+      <p class="mb-0">© 2025 GeminiSH. All rights reserved. &nbsp;·&nbsp; <a href="#privacy">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
